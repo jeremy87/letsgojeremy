@@ -11,10 +11,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'letsgojeremy' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'letsgojeremy' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'letsgojeremy' ), 'letsgojeremy', '<a href="http://jeremy.pike87@gmail.com" rel="designer">Jeremy Pike</a>' ); ?>
+		<div class="row">
+			<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" />
+			<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+		</div>
+
+		<div class="row">
+			<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+		</div>	
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

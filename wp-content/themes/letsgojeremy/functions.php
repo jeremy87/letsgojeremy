@@ -96,6 +96,8 @@ add_action( 'widgets_init', 'letsgojeremy_widgets_init' );
 function letsgojeremy_scripts() {
 	wp_enqueue_style( 'letsgojeremy-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'letsgojeremy-genericons', get_template_directory_uri() . '/fonts/genericons/genericons.css'  );
+
 	wp_enqueue_script( 'letsgojeremy-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'letsgojeremy-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -133,6 +135,17 @@ require get_template_directory() . '/inc/jetpack.php';
 
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
+    register_post_type( 'lgj_services',
+        array(
+            'labels' => array(
+                'name' => __( 'Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'taxonomies' => array('category'),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
     register_post_type( 'lgj_portfolio',
         array(
             'labels' => array(
