@@ -22,8 +22,8 @@ get_header(); ?>
 			<?php	
 			// The Arguments
 			$args = array( 
-    			'post_type' => 'product', 
-    			'posts_per_page' => 10 
+    			'post_type' => 'lgj_services', 
+    			'posts_per_page' => 3 
 			);
 			// Start Loop
 			$loop = new WP_Query( $args );
@@ -36,7 +36,7 @@ get_header(); ?>
 			</div>
 
 			<div class="column two-third">
-				<h3><?php the_field('portfolio_services_header'); ?></h3>
+				<p class="portfolio_header_text"><?php echo the_title(); ?></p>
 				<p class="portfolio_text"><?php the_field('portfolio_services_text'); ?></p>
 			</div>
 

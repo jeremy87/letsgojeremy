@@ -144,6 +144,7 @@ function create_post_type() {
             'taxonomies' => array('category'),
             'public' => true,
             'has_archive' => true,
+            'rewrite' => array('slug'=>'services')
         )
     );
     register_post_type( 'lgj_portfolio',
@@ -155,6 +156,7 @@ function create_post_type() {
             'taxonomies' => array('category'),
             'public' => true,
             'has_archive' => true,
+            'rewrite' => array('slug'=>'portfolio')
         )
     );
 }
