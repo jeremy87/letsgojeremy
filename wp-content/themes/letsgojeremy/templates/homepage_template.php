@@ -15,7 +15,18 @@ get_header(); ?>
 			<div class="full-width" style="background-image: url(<?php the_field('featured_image_background'); ?>);">
 				<h1><?php the_field('home_feature_headline'); ?></h1>
 				<p class="feature-text"><?php the_field('home_feature_text'); ?></p>
-			</div>	
+			</div>
+
+			<!-- About Area -->
+			<div class="about">
+				<div class="about_text">
+					<p class="about_headline"><?php the_field('about_headline'); ?></p>
+					<p class="about_headline"><?php the_field('about_text'); ?></p>
+				</div>
+				<div class="button">
+					<a href="http://www.letsgojeremy.com/services">Let's Go!</a>
+				</div>
+			</div>		
 
 			<!-- Services Area -->
 		<div class="row">
