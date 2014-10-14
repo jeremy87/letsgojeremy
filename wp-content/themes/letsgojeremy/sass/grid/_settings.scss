@@ -1,0 +1,17 @@
+
+// Total Number of Columns
+$grid_base: 12;   // Works best with 12 Columns
+
+// Columns
+$grid_gutter: 2%;
+$grid_padding: 0%;
+
+// Rows
+$grid_width: 85%;
+$grid_max-width: 1140px;
+
+
+
+// Imports
+@import "rows";
+@import "columns";

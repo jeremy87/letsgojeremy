@@ -1,0 +1,53 @@
+// Columns
+[class*="column-"] {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 $grid_padding;
+  margin: 0 $grid_gutter 0 0;
+
+  &:last-of-type { margin-right: 0; }
+}
+
+.column {
+  // Generate Grid
+  $i: $grid_base;
+  @while $i > 0 {
+    &-#{$i} {
+      width: ((100% - ($grid_gutter * ($i - 1))) / $i);
+    }
+    $i: $i - 1;
+  }
+
+  // Plain English Fallbacks
+  @if $grid_base == 8 or $grid_base == 16 {
+    &-eighth, &-eighths, &-one-eighth, &-one-eighths { @extend .column-#{$grid_base / ($grid_base / 8)}; }
+  }
+  @if $grid_base == 7 or $grid_base == 14 {
+    &-seventh, &-sevenths, &-one-seventh, &-one-sevenths { @extend .column-#{$grid_base / ($grid_base / 7)}; }
+  }
+  @if $grid_base == 6 or $grid_base == 12 or $grid_base == 18 {
+    &-sixth, &-sixths, &-one-sixth, &-one-sixths { @extend .column-#{$grid_base / ($grid_base / 6)}; }
+  }
+  @if $grid_base == 5 or $grid_base == 10 or $grid_base == 15 or $grid_base == 20 {
+    &-fifth, &-fifths, &-one-fifth, &-one-fifths { @extend .column-#{$grid_base / ($grid_base / 5)}; }
+  }
+  @if $grid_base == 4 or $grid_base == 8 or $grid_base == 12 or $grid_base == 16 or $grid_base == 20 {
+    &-quarter, &-quarters, &-fourth, &-fourths, &-one-quarter, &-one-quarters { @extend .column-#{$grid_base / ($grid_base / 4)}; }
+  }
+  @if $grid_base == 3 or $grid_base == 6 or $grid_base == 9 or $grid_base == 12 or $grid_base == 15 or $grid_base == 18 {
+    &-third, &-thirds, &-one-third, &-one-thirds { @extend .column-#{$grid_base / ($grid_base / 3)}; }
+    &-two-third, &-two-thirds { @extend .column-#{($grid_base / ($grid_base / 4) * 2)}; }
+  }
+  @if $grid_base == 2 or $grid_base == 4 or $grid_base == 6 or $grid_base == 8 or $grid_base == 10 or $grid_base == 12 or $grid_base == 14 or $grid_base == 16 or $grid_base == 18 {
+    &-half, &-halfs, &-halve, &-halves, &-one-half, &-one-halves { @extend .column-#{$grid_base / ($grid_base / 2)}; }
+  }
+
+  &-full, &-whole { @extend .column-#{$grid_base / ($grid_base)}; }
+
+
+  // Responsive
+//  @include media($bp_tablet) {}
+
+// @include media($bp_phone) {}
+}
+

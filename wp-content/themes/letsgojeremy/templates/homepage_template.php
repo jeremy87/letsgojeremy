@@ -16,20 +16,24 @@ get_header(); ?>
 				<h1><?php the_field('home_feature_headline'); ?></h1>
 				<p class="feature-text"><?php the_field('home_feature_text'); ?></p>
 			</div>
+			<!-- End Feature Area -->
 
 			<!-- About Area -->
-			<div class="about">
-				<div class="about_text">
-					<p class="about_headline"><?php the_field('about_headline'); ?></p>
-					<p class="about_headline"><?php the_field('about_text'); ?></p>
+			<div class="row">
+				<div class="column-half">
+					<div id="about-container">
+						<p class="about-headline"><?php the_field('about_headline'); ?></p>
+						<p class="about-text"><?php the_field('about_text'); ?></p>
+					</div>
+					<div class="button">
+						<a href="http://www.letsgojeremy.com/services">Let's Go!</a>
+					</div>
 				</div>
-				<div class="button">
-					<a href="http://www.letsgojeremy.com/services">Let's Go!</a>
-				</div>
-			</div>		
+			</div>
+			<!-- End About Area -->
 
 			<!-- Services Area -->
-		<div class="row">
+		<div>
 			<?php	
 			// The Arguments
 			$args = array( 
@@ -41,49 +45,23 @@ get_header(); ?>
 			while ( $loop->have_posts() ) : $loop->the_post();
     		// The Content
 			?>
-
-			<div class="column third">
+		<div class="row">	
+			<div class="column-third">
 				<img src="<?php the_field('portfolio_services_image'); ?>" />
 			</div>
 
-			<div class="column two-third">
+			<div class="column-1">
 				<p class="portfolio_header_text"><?php echo the_title(); ?></p>
 				<p class="portfolio_text"><?php the_field('portfolio_services_text'); ?></p>
 			</div>
+		</div>	
 
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
 		</div>	
 
 			<?php endwhile; // end of the loop. ?>
-
-			<!-- Blog Post Area -->
-		<div class="row">
-			<?php	
-			// The Arguments
-			$args = array( 
-    			'post_type' => 'post',
-    			'category_name' => 'blog',
-    			'posts_per_page' => 3 
-			);
-			// Start Loop
-			$loop = new WP_Query( $args );
-			while ( $loop->have_posts() ) : $loop->the_post();
-			?>
-
-			<div>
-				<h3><?php the_title(); ?></h3>
-				<?php the_category(); ?>
-				<p><?php the_date(); ?> - <?php the_author(); ?></p>
-				<?php echo wp_trim_words( get_the_content(), 40 ); ?>
-				<a href="<?php the_permalink(); ?>">Read More <span class="genericon genericon-next"></span></a>
-			</div>	
-
-			<?php endwhile; ?>
-			<?php wp_reset_postdata(); ?>
-
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>categories/blog/">View More <span class="genericon genericon-next"></span></a>
-		</div>	
+			<!-- End Service Area -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
