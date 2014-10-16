@@ -167,10 +167,19 @@ a img {
 .column-1, .column-full, .column-whole {
   width: 100%; }
 @media (max-width: 768px) {
+  .column-sixth, .column-sixths, .column-one-sixth, .column-one-sixths {
+    width: 33.3333333333%; } }
+@media (max-width: 768px) {
+  .column-quarter, .column-quarters, .column-fourth, .column-fourths, .column-one-quarter, .column-one-quarters {
+    width: 50%; } }
+@media (max-width: 768px) {
   .column-third, .column-thirds, .column-one-third, .column-one-thirds {
     width: 100%; } }
 .column-two-third, .column-two-thirds {
   width: 64.6666666667%; }
+@media (max-width: 480px) {
+  .column-half, .column-halfs, .column-halve, .column-halves, .column-one-half, .column-one-halves {
+    width: 100%; } }
 
 /*--------------------------------------------------------------
 2.0 Typography

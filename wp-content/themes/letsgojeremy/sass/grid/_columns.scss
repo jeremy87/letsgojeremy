@@ -30,13 +30,19 @@
     &-seventh, &-sevenths, &-one-seventh, &-one-sevenths { @extend .column-#{$grid_base / ($grid_base / 7)}; }
   }
   @if $grid_base == 6 or $grid_base == 12 or $grid_base == 18 {
-    &-sixth, &-sixths, &-one-sixth, &-one-sixths { @extend .column-#{$grid_base / ($grid_base / 6)}; }
+    &-sixth, &-sixths, &-one-sixth, &-one-sixths { 
+      @extend .column-#{$grid_base / ($grid_base / 6)}; 
+      @include media($tablet) { width: (100% / 3); } //Responsive
+    }
   }
   @if $grid_base == 5 or $grid_base == 10 or $grid_base == 15 or $grid_base == 20 {
     &-fifth, &-fifths, &-one-fifth, &-one-fifths { @extend .column-#{$grid_base / ($grid_base / 5)}; }
   }
   @if $grid_base == 4 or $grid_base == 8 or $grid_base == 12 or $grid_base == 16 or $grid_base == 20 {
-    &-quarter, &-quarters, &-fourth, &-fourths, &-one-quarter, &-one-quarters { @extend .column-#{$grid_base / ($grid_base / 4)}; }
+    &-quarter, &-quarters, &-fourth, &-fourths, &-one-quarter, &-one-quarters { 
+      @extend .column-#{$grid_base / ($grid_base / 4)};
+      @include media($tablet) { width: (100% / 2); } //Responsive
+    }
   }
   @if $grid_base == 3 or $grid_base == 6 or $grid_base == 9 or $grid_base == 12 or $grid_base == 15 or $grid_base == 18 {
     &-third, &-thirds, &-one-third, &-one-thirds { 
@@ -46,7 +52,10 @@
     &-two-third, &-two-thirds { width: (((100% / 3) * 2) - $grid_gutter); }
   }
   @if $grid_base == 2 or $grid_base == 4 or $grid_base == 6 or $grid_base == 8 or $grid_base == 10 or $grid_base == 12 or $grid_base == 14 or $grid_base == 16 or $grid_base == 18 {
-    &-half, &-halfs, &-halve, &-halves, &-one-half, &-one-halves { @extend .column-#{$grid_base / ($grid_base / 2)}; }
+    &-half, &-halfs, &-halve, &-halves, &-one-half, &-one-halves { 
+      @extend .column-#{$grid_base / ($grid_base / 2)}; 
+      @include media($phone) {width: 100%; } //Responsive
+    }
   }
 
   &-full, &-whole { @extend .column-#{$grid_base / ($grid_base)}; }
