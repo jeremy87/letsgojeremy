@@ -20,7 +20,11 @@
 
   // Plain English Fallbacks
   @if $grid_base == 8 or $grid_base == 16 {
-    &-eighth, &-eighths, &-one-eighth, &-one-eighths { @extend .column-#{$grid_base / ($grid_base / 8)}; }
+    &-eighth, &-eighths, &-one-eighth, &-one-eighths { 
+      @extend .column-#{$grid_base / ($grid_base / 8)}; 
+      @include media($tablet) { @extend .column-#{$grid_base / ($grid_base / 4)}; } //Responsive
+      @include media($phone) { width: 100%; }  //Responsive
+    }
   }
   @if $grid_base == 7 or $grid_base == 14 {
     &-seventh, &-sevenths, &-one-seventh, &-one-sevenths { @extend .column-#{$grid_base / ($grid_base / 7)}; }
@@ -35,19 +39,16 @@
     &-quarter, &-quarters, &-fourth, &-fourths, &-one-quarter, &-one-quarters { @extend .column-#{$grid_base / ($grid_base / 4)}; }
   }
   @if $grid_base == 3 or $grid_base == 6 or $grid_base == 9 or $grid_base == 12 or $grid_base == 15 or $grid_base == 18 {
-    &-third, &-thirds, &-one-third, &-one-thirds { @extend .column-#{$grid_base / ($grid_base / 3)}; }
-    &-two-third, &-two-thirds { @extend .column-#{($grid_base / ($grid_base / 4) * 2)}; }
+    &-third, &-thirds, &-one-third, &-one-thirds { 
+      @extend .column-#{$grid_base / ($grid_base / 3)};
+      @include media($tablet) { width: 100%; } //Responsive 
+    }
+    &-two-third, &-two-thirds { width: (((100% / 3) * 2) - $grid_gutter); }
   }
   @if $grid_base == 2 or $grid_base == 4 or $grid_base == 6 or $grid_base == 8 or $grid_base == 10 or $grid_base == 12 or $grid_base == 14 or $grid_base == 16 or $grid_base == 18 {
     &-half, &-halfs, &-halve, &-halves, &-one-half, &-one-halves { @extend .column-#{$grid_base / ($grid_base / 2)}; }
   }
 
   &-full, &-whole { @extend .column-#{$grid_base / ($grid_base)}; }
-
-
-  // Responsive
-//  @include media($bp_tablet) {}
-
-// @include media($bp_phone) {}
 }
 

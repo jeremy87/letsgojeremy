@@ -11,9 +11,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<!-- Image Area -->
-			<div class="full-width" style="background-image: url(<?php the_field('services_image_background'); ?>);">
-			</div>	
+			<!-- Header Image Area -->
+		<div class="full-width" style="background-image: url(<?php the_field('service_image_background'); ?>);">
+			<h1><?php the_field('service_feature_headline'); ?></h1>
+			<p class="feature-text"><?php the_field('service_feature_text'); ?></p>
+		</div>
+			<!-- End Header Image Area -->
 
 			<!-- Services Area -->
 		<div class="row">
@@ -30,12 +33,12 @@ get_header(); ?>
 			?>
 
 			<div class="column third">
-				<img src="<?php the_field('portfolio_services_image'); ?>" />
+				<img src="<?php the_field('services_image'); ?>" />
 			</div>
 
 			<div class="column two-third">
-				<p class="portfolio_header_text"><?php echo the_title(); ?></p>
-				<p class="portfolio_text"><?php the_field('portfolio_services_text'); ?></p>
+				<p class="service_header_text"><?php echo the_title(); ?></p>
+				<p class="service_text"><?php the_content(); ?></p>
 			</div>
 
 			<?php endwhile; ?>

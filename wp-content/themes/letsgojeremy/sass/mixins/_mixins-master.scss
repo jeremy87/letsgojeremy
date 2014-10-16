@@ -34,3 +34,12 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Responsive
+$tablet: 768px;
+$phone: 480px;
+
+@mixin media($bp, $size: small) {
+	@if $size == small { @media (max-width: $bp) { @content; } }
+	@else if $size == large { @media (min-width: $bp) { @content; } }
+}
