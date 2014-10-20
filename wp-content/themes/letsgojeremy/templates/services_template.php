@@ -13,13 +13,17 @@ get_header(); ?>
 
 			<!-- Header Image Area -->
 		<div class="full-width" style="background-image: url(<?php the_field('service_image_background'); ?>);">
-			<h1><?php the_field('service_feature_headline'); ?></h1>
-			<p class="feature-text"><?php the_field('service_feature_text'); ?></p>
+			<h1><?php the_field('service_hero_headline'); ?></h1>
+			<p class="feature-text"><?php the_field('service_hero_text'); ?></p>
 		</div>
 			<!-- End Header Image Area -->
 
 			<!-- Services Area -->
 		<div class="row">
+			<h2>Services</h2>
+
+			<hr />
+
 			<?php	
 			// The Arguments
 			$args = array( 
@@ -46,6 +50,19 @@ get_header(); ?>
 		</div>	
 
 			<?php endwhile; // end of the loop. ?>
+
+		<div class="row">
+			<div class="column-full">
+				<div id="contact-container">
+					<h2>Contact</h2>
+					<p class="services-contact-text"><?php the_field('contact_text'); ?></p>
+					<div class="service-contact-button">
+						<a href="http://www.letsgojeremy.com/contact">Let's Go!</a>
+					</div>
+				</div>	
+			</div>	
+		</div>	
+				
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
