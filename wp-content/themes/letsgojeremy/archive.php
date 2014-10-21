@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
+				<h1 class="page-title">Category // 
 					<?php
 						if ( is_category() ) :
 							single_cat_title();
@@ -80,13 +80,13 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+		<!-- Content goes here -->
+		<?php while ( have_rows('portfolio_images') ) : the_row();?>
+
+		        <img src="<?php the_sub_field('portfolio_images'); ?>" />
+		        <p class="image-text2"><?php the_sub_field('image_name'); ?></p>
+
+		 <?php endwhile;?>
 
 			<?php endwhile; ?>
 
@@ -101,5 +101,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
