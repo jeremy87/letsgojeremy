@@ -65,7 +65,7 @@ get_header(); ?>
 			$args = array( 
     			'post_type' => 'lgj_portfolio', 
     			'posts_per_page' => 10,
-    			'category_name' => -8 //Doesnt pull in the Featured Post - uses the categories ID number 
+    			'cat' => -8 //Doesnt pull in the Featured Post - uses the categories ID number 
 			);
 			// Start Loop
 			$loop = new WP_Query( $args );
