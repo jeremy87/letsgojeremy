@@ -1,3 +1,18 @@
+header {
+	background-color: #3d3d3e;
+	border-bottom: 3px solid #98c539;
+	height: 75px;
+}
+
+.fixed-header {
+	position: fixed;
+}
+
+.site-branding {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .hero-section {
 	background-repeat: no-repeat;
 	background-size: cover;

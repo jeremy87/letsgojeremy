@@ -1,8 +1,6 @@
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	margin-top: 10px;
 
 	ul {
 		list-style: none;
@@ -46,13 +44,17 @@
 	li {
 		float: left;
 		position: relative;
+		margin-left: 20px;
+		font-size: 18px;
 
 		&:hover > a {
+			color: #98c539;
 		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
+		color: #eaeaea;
 	}
 
 	.current_page_item > a,

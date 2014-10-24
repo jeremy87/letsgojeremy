@@ -23,18 +23,18 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'letsgojeremy' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
+		<div class="row">
+			<div class="site-branding">
+					<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" />
+					</a>
 
-			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" />
-			</a>
-			
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle"><?php _e( 'Primary Menu', 'letsgojeremy' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</div>	
+				</nav><!-- #site-navigation -->
 		</div>
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'letsgojeremy' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
