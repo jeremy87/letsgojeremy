@@ -43,9 +43,14 @@ and Blueprint http://www.blueprintcss.org/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
+/* Site Branding */
+/* Default Colors */
+/* Site Branding */
+/* Default */
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300,100,900);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -78,7 +83,6 @@ html {
 *:before,
 *:after {
   /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -136,7 +140,8 @@ a img {
 
 [class*="column-"] {
   float: left;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   padding: 0 0%;
   margin: 0 2% 0 0; }
   [class*="column-"]:last-of-type {
@@ -190,7 +195,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5; }
@@ -324,7 +329,6 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
@@ -365,7 +369,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
-  -webkit-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
   -moz-box-sizing: content-box;
   box-sizing: content-box; }
@@ -390,7 +393,6 @@ textarea {
   border: 1px solid #ccc;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 input[type="text"]:focus,
@@ -459,9 +461,12 @@ a {
     float: left;
     position: relative;
     margin-left: 20px;
-    font-size: 18px; }
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400; }
     .main-navigation li:hover > a {
-      color: #98c539; }
+      color: #98c539;
+      font-weight: 300; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -497,6 +502,51 @@ a {
   text-align: right;
   width: 50%; }
 
+footer#colophon {
+  background: #3d3d3e;
+  padding: 1em 0 0; }
+  footer#colophon .row {
+    margin-bottom: 0; }
+
+.copyright {
+  text-align: left;
+  font-size: 12px;
+  color: #eaeaea;
+  font-family: "Lato", sans-serif;
+  font-weight: 100; }
+
+.menu-footer-navigation-container {
+  float: right;
+  text-align: right; }
+  .menu-footer-navigation-container ul {
+    margin-bottom: 5px; }
+  .menu-footer-navigation-container li {
+    display: inline-block;
+    text-align: right;
+    margin-left: 5px; }
+    .menu-footer-navigation-container li a {
+      color: #eaeaea;
+      text-decoration: none; }
+      .menu-footer-navigation-container li a:hover {
+        color: #98c539; }
+
+.menu-footer-navigation-container {
+  margin-bottom: 10px; }
+  .menu-footer-navigation-container li a {
+    font-family: 'Roboto Slab', 'Open Sans', helvetica, arial, san-serif; }
+
+.site-header {
+  background-color: #3d3d3e;
+  border-bottom: 3px solid #98c539;
+  height: 75px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5); }
+
+.site-branding {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -511,7 +561,6 @@ a {
     background-color: #f1f1f1;
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
@@ -718,21 +767,10 @@ object {
 /*--------------------------------------------------------------
 13.0 Custom
 --------------------------------------------------------------*/
-header {
-  background-color: #3d3d3e;
-  border-bottom: 3px solid #98c539;
-  height: 75px; }
-
-.fixed-header {
-  position: fixed; }
-
-.site-branding {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
 .hero-section {
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: bottom center; }
 
 p.about-text {
   text-align: center;

@@ -1,4 +1,12 @@
-$font__main: sans-serif;
+/* Site Branding */
+$font__main: 'Lato', sans-serif;
+$font__thin-weight: 100;
+$font__main-weight: 300;
+$font__medium-weight: 400;
+$font__bold-weight: 700;
+$font__superbold-weight: 900; 
+
+/* Default */
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

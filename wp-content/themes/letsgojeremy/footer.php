@@ -8,19 +8,20 @@
  */
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="row">
-			<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" />
-			<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-		</div>
+			<div class="column-half copyright">
+				<p>Copyright &copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?> | All Rights Reserved</p>
+			</div>
 
-		<div class="row">
-			<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+			<div class="column-half menu-footer-navigation-container">
+				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+			</div>
 		</div>	
-		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

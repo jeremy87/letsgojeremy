@@ -1,0 +1,34 @@
+footer#colophon {
+	background: $dark_grey;
+	padding: 1em 0 0;
+	.row { margin-bottom: 0; }
+}
+.copyright {
+	text-align: left;
+	font-size: 12px;
+	color: $light_grey;
+	font-family: $font__main;
+	font-weight: $font__thin-weight;
+}
+
+.menu-footer-navigation-container {
+	float: right;
+	text-align: right;
+		ul { margin-bottom: 5px;}
+		li {
+			display: inline-block;
+			text-align: right;
+			margin-left: 5px;
+		a {
+			color: $light_grey;
+			text-decoration: none;
+			&:hover { color: $green; }
+		}
+	}
+}
+.menu-footer-navigation-container {
+margin-bottom: 10px;
+li a {
+font-family: 'Roboto Slab', 'Open Sans', helvetica, arial, san-serif;
+}
+}

@@ -1,1 +1,1 @@
-function resizeDiv(){vpw=$(window).width(),vph=$(window).height(),$(".hero-section").css({height:vph/1.5+"px"})}$(document).ready(function(){resizeDiv()}),window.onresize=function(i){resizeDiv()};
+function resizeDiv(){vpw=$(window).width(),vph=$(window).height(),$("body.home .hero-section").css({height:vph/1.5+"px"})}$(document).ready(function(){resizeDiv()}),window.onresize=function(i){resizeDiv()};
