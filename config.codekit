@@ -7409,6 +7409,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/letsgojeremy\/images\/greyorchid.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67673,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/letsgojeremy\/images\/greyorchid.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/letsgojeremy\/images\/greyorchid.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/letsgojeremy\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -9634,6 +9645,50 @@
 		"initialSize": 49055,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/denver-skyline.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/denver-skyline.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/wood-1-150x150.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12540,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/wood-1-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/wood-1-150x150.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/wood-1-199x300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31538,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/wood-1-199x300.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/wood-1-199x300.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/wood-1-680x1024.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 346849,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/wood-1-680x1024.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/wood-1-680x1024.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/wood-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.49133e+06,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/wood-1.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/wood-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

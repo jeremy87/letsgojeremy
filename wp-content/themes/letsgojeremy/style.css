@@ -50,7 +50,7 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300,100,900);
+@import url(http://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Lato:400,300,700,900);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -531,12 +531,13 @@ footer#colophon {
         color: #98c539; }
 
 .menu-footer-navigation-container {
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
   .menu-footer-navigation-container li a {
     font-family: 'Roboto Slab', 'Open Sans', helvetica, arial, san-serif; }
 
 .site-header {
-  background-color: #3d3d3e;
+  background: url("images/greyorchid.png");
+  background-repeat: repeat;
   border-bottom: 3px solid #98c539;
   height: 75px;
   position: fixed;
@@ -767,12 +768,76 @@ object {
 /*--------------------------------------------------------------
 13.0 Custom
 --------------------------------------------------------------*/
+/* Homepage */
+/* Image */
 .hero-section {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center; }
+  background-position: bottom center;
+  background: gradient(red, blue); }
+
+#gradient {
+  background: -webkit-linear-gradient(transparent, #eaeaea);
+  background: linear-gradient(transparent, #eaeaea); }
+
+p.feature-headline {
+  margin-top: 500px;
+  margin-bottom: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #3d3d3e; }
+
+p.feature-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3d3d3e; }
+
+/* About */
+#light_grey {
+  background-color: #eaeaea;
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+#about-container {
+  text-align: center;
+  max-width: 65%;
+  margin: auto; }
+
+p.about-headline {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 42px;
+  margin-bottom: 5px; }
 
 p.about-text {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 24px; }
+
+.btn {
+  background: #98c539;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 700;
+  color: #3d3d3e;
+  font-size: 24px;
   text-align: center;
-  max-width: 50%;
-  margin: auto; }
+  padding: 10px 5px 10px 5px;
+  text-decoration: none;
+  max-width: 15%;
+  margin: auto;
+  margin-top: 30px; }
+
+.btn:hover {
+  background: #3d3d3e;
+  color: #98c539;
+  text-decoration: none; }
+
+a.btn {
+  color: #3d3d3e;
+  text-decoration: none; }
+
+a.btn:hover {
+  color: #98c539;
+  text-decoration: none; }

@@ -10,5 +10,5 @@ function resizeDiv() {
     vph = $(window).height(); // Viewport Height
 
     // Hero Image
-    $('body.home .hero-section').css({'height': vph / 1.5 + 'px'}); // Setting the Height of a class equal to the viewport height divided by 2
+    $('body.home .hero-section #gradient').css({'height': vph / 1 + 'px'}); // Setting the Height of a class equal to the viewport height divided by 2
 }
