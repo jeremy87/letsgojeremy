@@ -54,7 +54,7 @@ p.about-text {
 }
 
 .btn {
- 	background: $green;
+ 	background: linear-gradient($green, $dark_green);
   	border-radius: 5px;
   	box-shadow: 0px 1px 3px #666666;
   	font-family: $font__written;
@@ -70,7 +70,7 @@ p.about-text {
 }
 
 .btn:hover {
-  	background: $dark_grey;
+  	background: linear-gradient($med_grey, $dark_grey);
   	color: $green;
   	text-decoration: none;
 }
@@ -83,4 +83,34 @@ a.btn {
 a.btn:hover {
 	color: $green;
     text-decoration: none;
+}
+
+/* Service Area */
+
+#service-container {
+	background-color: $green;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+.frame {
+	border: 10px solid $light_grey;
+	border-bottom: 5px solid $light_grey;
+	box-shadow: 0 8px 6px -6px black;
+	background-color: $light_grey;
+}
+
+p.service_header_text {
+	color: $dark_grey;
+	font-family: $font__main;
+	font-weight: $font__bold-weight;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+p.service_description {
+	color: $dark_grey;
+	font-family: $font__main;
+	font-weight: $font__medium-weight;
+	font-size: 18px;
 }

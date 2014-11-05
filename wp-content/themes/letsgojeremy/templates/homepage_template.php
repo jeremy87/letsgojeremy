@@ -39,6 +39,7 @@ get_header(); ?>
 			<!-- End About Area -->
 
 			<!-- Services Area -->
+	<div id="service-container">	
 		<div>
 			<?php	
 			// The Arguments
@@ -50,21 +51,22 @@ get_header(); ?>
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post();
     		// The Content
-			?>
-		<div class="row">	
-			<div class="column-third">
-				<img src="<?php the_field('services_image'); ?>" />
-			</div>
+			?>	
+			<div class="row">	
+				<div class="column-third frame">
+					<img src="<?php the_field('services_image'); ?>" />
+				</div>
 
-			<div class="column-two-third">
-				<p class="service_header_text"><?php echo the_title(); ?></p>
-				<p class="service_text"><?php the_content(); ?></p>
-			</div>
-		</div>	
+				<div class="column-two-third">
+					<p class="service_header_text"><?php echo the_title(); ?></p>
+					<p class="service_description"><?php the_field('service_text'); ?></p>
+				</div>
+			</div>		
 
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
-		</div>	
+		</div>
+	</div>		
 
 			<?php endwhile; // end of the loop. ?>
 			<!-- End Service Area -->
