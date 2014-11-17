@@ -12,15 +12,17 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<!-- Header Image Area -->
-				<div class="full-width" style="background-image: url(<?php the_field('portfolio_image_background'); ?>);">
-					<h1><?php the_field('portfolio_hero_headline'); ?></h1>
-					<p class="feature-text"><?php the_field('portfolio_hero_text'); ?></p>
+				<div class="full-width secondary-hero" style="background-image: url(<?php the_field('portfolio_image_background'); ?>);">
+					<div class="row">
+						<p class="secondary-hero-feature"><?php the_field('portfolio_hero_headline'); ?></p>
+						<p class="secondary-hero-text"><?php the_field('portfolio_hero_text'); ?></p>
+					</div>
 				</div>
 			<!-- End Header Image Area -->
 
 			<!-- Featured Project -->
 
-						<?php	
+		<?php	
 			// The Arguments
 			$args = array( 
     			'post_type' => 'lgj_portfolio', 
@@ -34,12 +36,13 @@ get_header(); ?>
     		// The Content
 			?>
 
-		<div class="column-one">
+	<div class="row">		
+		<div class="column-full">
 				<p class="portfolio_title"><?php echo the_title(); ?></p>
 				<p class="category-text"><?php the_category(); ?></p>
 					<hr />
 				<p class="portfolio_description"><?php the_field('portfolio_description'); ?></p>
-			
+	</div>		
 			<!-- Repeater -->
 			<div class="portfolio-preview"> 
 

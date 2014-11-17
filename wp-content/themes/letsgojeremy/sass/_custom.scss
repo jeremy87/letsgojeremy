@@ -5,7 +5,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
-	background: gradient(red,blue);
 }
 
 #gradient {
@@ -90,7 +89,19 @@ a.btn:hover {
 #service-container {
 	background-color: $green;
 	padding-top: 50px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+.service-header {
+	color: $dark_grey;
+	font-family: $font__main;
+	font-weight: $font__bold-weight;
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+a.service-header {
+	text-decoration: none;
 }
 
 .frame {
@@ -113,4 +124,68 @@ p.service_description {
 	font-family: $font__main;
 	font-weight: $font__medium-weight;
 	font-size: 18px;
+	padding-bottom: 10px;
 }
+
+/* SERVICE PAGE */
+.secondary-hero {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	height: 300px
+}
+
+p.secondary-hero-feature { 
+	color: $light_grey;
+	font-family: $font__main;
+	font-weight: $font__bold-weight;
+	font-size: 32px;
+	margin-bottom: 5px;
+	padding-top: 100px;
+}
+
+p.secondary-hero-text {
+	color: $light_grey;
+	font-family: $font__main;
+	font-weight: $font__medium-weight;
+	font-size: 18px;	
+}
+
+#service-page-container {
+	background-color: $light_grey;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#contact-container {
+	background-color: $green;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+.service-contact-header {
+	color: $dark_grey;
+	font-family: $font__main;
+	font-weight: $font__bold-weight;
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+/* WORK ON THE BUTTON STYLING */
+.btn-service {
+ 	background-color: $dark_grey;
+  	border-radius: 5px;
+  	box-shadow: 0px 1px 3px #666666;
+  	font-family: $font__main;
+  	font-weight: $font__bold-weight;
+  	color: $dark_grey;
+  	font-size: 24px;
+  	text-align: center;
+  	padding: 10px 5px 10px 5px;
+  	text-decoration: none;
+  	max-width: 15%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+/* PORTFOLIO PAGE */

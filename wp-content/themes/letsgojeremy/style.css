@@ -543,7 +543,8 @@ footer#colophon {
   height: 75px;
   position: fixed;
   width: 100%;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  z-index: 999; }
 
 .site-branding {
   margin-top: 20px;
@@ -774,8 +775,7 @@ object {
 .hero-section {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
-  background: gradient(red, blue); }
+  background-position: bottom center; }
 
 #gradient {
   background: -webkit-linear-gradient(transparent, #eaeaea);
@@ -849,7 +849,17 @@ a.btn:hover {
 #service-container {
   background-color: #98c539;
   padding-top: 50px;
-  padding-bottom: 10px; }
+  padding-bottom: 20px; }
+
+.service-header {
+  color: #3d3d3e;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px; }
+
+a.service-header {
+  text-decoration: none; }
 
 .frame {
   border: 10px solid #eaeaea;
@@ -868,4 +878,61 @@ p.service_description {
   color: #3d3d3e;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 10px; }
+
+/* SERVICE PAGE */
+.secondary-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 300px; }
+
+p.secondary-hero-feature {
+  color: #eaeaea;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 5px;
+  padding-top: 100px; }
+
+p.secondary-hero-text {
+  color: #eaeaea;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 18px; }
+
+#service-page-container {
+  background-color: #eaeaea;
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+#contact-container {
+  background-color: #98c539;
+  padding-top: 50px;
+  padding-bottom: 10px; }
+
+.service-contact-header {
+  color: #3d3d3e;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px; }
+
+/* WORK ON THE BUTTON STYLING */
+.btn-service {
+  background-color: #3d3d3e;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #3d3d3e;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  text-decoration: none;
+  max-width: 15%;
+  margin: auto;
+  margin-top: 30px; }
+
+/* PORTFOLIO PAGE */
