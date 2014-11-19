@@ -11,6 +11,11 @@
   background: linear-gradient(rgba(0,0,0,0),rgba(234,234,234,1));
 } 
 
+#gradient-small {
+  background: linear-gradient(rgba(0,0,0,0),rgba(234,234,234,1));
+  height: 300px;
+} 
+
 p.feature-headline {
 	margin-top: 500px;
 	margin-bottom: 5px;
@@ -53,35 +58,29 @@ p.about-text {
 }
 
 .btn {
- 	background: linear-gradient($green, $dark_green);
-  	border-radius: 5px;
-  	box-shadow: 0px 1px 3px #666666;
-  	font-family: $font__written;
-  	font-weight: $font__bold-weight;
-  	color: $dark_grey;
-  	font-size: 24px;
-  	text-align: center;
-  	padding: 10px 5px 10px 5px;
-  	text-decoration: none;
-  	max-width: 15%;
 	margin: auto;
-	margin-top: 30px;
-}
-
-.btn:hover {
-  	background: linear-gradient($med_grey, $dark_grey);
-  	color: $green;
-  	text-decoration: none;
 }
 
 a.btn {
 	color: $dark_grey;
     text-decoration: none;
+    background: linear-gradient($green, $dark_green);
+  	border-radius: 5px;
+  	box-shadow: 0px 1px 3px #666666;
+  	font-family: $font__written;
+  	font-weight: $font__medium-weight;
+  	font-size: 24px;
+  	text-align: center;
+  	padding: 10px 30px 10px 30px;
+  	text-decoration: none;
+  	max-width: 15%;
+	margin-top: 30px;
 }
 
 a.btn:hover {
 	color: $green;
     text-decoration: none;
+    background: linear-gradient($med_grey, $dark_grey);
 }
 
 /* Service Area */
@@ -126,6 +125,7 @@ p.service_description {
 	font-size: 18px;
 	padding-bottom: 10px;
 }
+
 
 /* SERVICE PAGE */
 .secondary-hero {
@@ -189,3 +189,7 @@ p.secondary-hero-text {
 }
 
 /* PORTFOLIO PAGE */
+
+.featured-area {
+	
+}

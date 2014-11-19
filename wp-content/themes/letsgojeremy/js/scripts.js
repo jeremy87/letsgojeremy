@@ -40,3 +40,8 @@ else
       }  
   }
 });
+
+// CALL BLOXHOVER //
+    $(document).ready(function() {
+        $('.mydiv').bloxhover({effect: 'square', duration: 400, sliceCount: 32, delay: 30, color: 'rgba(141, 198, 63, 0.7)'});
+    });

@@ -9693,6 +9693,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/uploads\/2014\/09\/woodwithfade-1024x556.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 204215,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/woodwithfade-1024x556.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/woodwithfade-1024x556.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/woodwithfade-150x150.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9818,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/woodwithfade-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/woodwithfade-150x150.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/woodwithfade-300x162.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19892,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/woodwithfade-300x162.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/woodwithfade-300x162.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/woodwithfade.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 438326,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/woodwithfade.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/woodwithfade.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-cron.php": {
 		"fileType": 8192,
 		"ignore": 0,

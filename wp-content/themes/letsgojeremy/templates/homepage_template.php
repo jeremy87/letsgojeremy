@@ -29,9 +29,7 @@ get_header(); ?>
 					<div id="about-container">
 						<p class="about-headline"><?php the_field('about_headline'); ?></p>
 						<p class="about-text"><?php the_field('about_text'); ?></p>
-					</div>
-					<div class="about-text btn">
-						<a.btn="http://www.letsgojeremy.com/services" style="text-decoration:none;">Let's Go!</a>
+						<a class="btn" href="http://www.letsgojeremy.com/services">Let's Go!</a>
 					</div>
 				</div>
 			</div>

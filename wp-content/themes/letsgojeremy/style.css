@@ -781,6 +781,11 @@ object {
   background: -webkit-linear-gradient(transparent, #eaeaea);
   background: linear-gradient(transparent, #eaeaea); }
 
+#gradient-small {
+  background: -webkit-linear-gradient(transparent, #eaeaea);
+  background: linear-gradient(transparent, #eaeaea);
+  height: 300px; }
+
 p.feature-headline {
   margin-top: 500px;
   margin-bottom: 5px;
@@ -816,34 +821,29 @@ p.about-text {
   font-size: 24px; }
 
 .btn {
+  margin: auto; }
+
+a.btn {
+  color: #3d3d3e;
+  text-decoration: none;
   background: -webkit-linear-gradient(#98c539, #81b01f);
   background: linear-gradient(#98c539, #81b01f);
   border-radius: 5px;
   box-shadow: 0px 1px 3px #666666;
   font-family: "Covered By Your Grace", cursive;
-  font-weight: 700;
-  color: #3d3d3e;
+  font-weight: 400;
   font-size: 24px;
   text-align: center;
-  padding: 10px 5px 10px 5px;
+  padding: 10px 30px 10px 30px;
   text-decoration: none;
   max-width: 15%;
-  margin: auto;
   margin-top: 30px; }
-
-.btn:hover {
-  background: -webkit-linear-gradient(#575758, #3d3d3e);
-  background: linear-gradient(#575758, #3d3d3e);
-  color: #98c539;
-  text-decoration: none; }
-
-a.btn {
-  color: #3d3d3e;
-  text-decoration: none; }
 
 a.btn:hover {
   color: #98c539;
-  text-decoration: none; }
+  text-decoration: none;
+  background: -webkit-linear-gradient(#575758, #3d3d3e);
+  background: linear-gradient(#575758, #3d3d3e); }
 
 /* Service Area */
 #service-container {

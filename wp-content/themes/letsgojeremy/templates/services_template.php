@@ -13,9 +13,11 @@ get_header(); ?>
 
 			<!-- Header Image Area -->
 		<div class="full-width secondary-hero" style="background-image: url(<?php the_field('service_image_background'); ?>);">
+			<div id="gradient-small">
 			<div class="row">
 			<p class ="secondary-hero-feature"><?php the_field('service_hero_headline'); ?></h1>
 			<p class="secondary-hero-text"><?php the_field('service_hero_text'); ?></p>
+			</div>
 			</div>
 		</div>
 			<!-- End Header Image Area -->
