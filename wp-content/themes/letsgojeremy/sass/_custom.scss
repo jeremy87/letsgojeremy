@@ -171,6 +171,14 @@ p.secondary-hero-text {
 	margin-bottom: 10px;
 }
 
+.service-contact-text {
+	color: $dark_grey;
+	font-family: $font__main;
+	font-weight: $font__medium-weight;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
 /* WORK ON THE BUTTON STYLING */
 .btn-service {
  	background-color: $dark_grey;
@@ -190,6 +198,52 @@ p.secondary-hero-text {
 
 /* PORTFOLIO PAGE */
 
-.featured-area {
-	
+#portfolio-featured {
+	background-color: $green;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.portfolio_title_featured {
+	color: $light_grey;
+	font-size: 32px;
+	font-weight: $font__bold-weight;
+	margin-bottom: 5px;
+}
+
+.portfolio_description {
+	color: $light_grey;
+	font-size: 18px;
+	font-weight: $font__medium-weight;
+}
+
+hr {
+	height: 2px;
+	background-color: $light_grey;
+}
+
+.post-categories {
+	float: right;
+	background-color: $light_grey;
+
+	ul {
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		position: relative;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 18px;
+		font-family: $font__main;
+		font-weight: $font__medium-weight;
+		list-style: none;
+		text-align: center;
+		}
+	a {
+		display: block;
+		text-decoration: none;
+		color: $dark_grey;
+	}	
 }

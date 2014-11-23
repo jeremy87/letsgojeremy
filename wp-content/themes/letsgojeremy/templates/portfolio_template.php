@@ -11,15 +11,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<!-- Header Image Area -->
-				<div class="full-width secondary-hero" style="background-image: url(<?php the_field('portfolio_image_background'); ?>);">
-					<div class="row">
-						<p class="secondary-hero-feature"><?php the_field('portfolio_hero_headline'); ?></p>
-						<p class="secondary-hero-text"><?php the_field('portfolio_hero_text'); ?></p>
-					</div>
-				</div>
-			<!-- End Header Image Area -->
-
 			<!-- Featured Project -->
 
 		<?php	
@@ -35,14 +26,13 @@ get_header(); ?>
 			while ( $loop->have_posts() ) : $loop->the_post();
     		// The Content
 			?>
-
+<div id="portfolio-featured">
 	<div class="row">		
 		<div class="column-full">
-				<p class="portfolio_title"><?php echo the_title(); ?></p>
-				<p class="category-text"><?php the_category(); ?></p>
+			<p class="portfolio_title_featured"><?php echo the_title(); ?></p>		
 					<hr />
 				<p class="portfolio_description"><?php the_field('portfolio_description'); ?></p>
-	</div>		
+		</div>					
 			<!-- Repeater -->
 			<div class="portfolio-preview"> 
 
@@ -53,7 +43,8 @@ get_header(); ?>
 		 	
 		 	</div>
 			<!-- End Repeater -->
-		</div>
+	</div>		
+</div>
 
 
 			<?php endwhile; ?>

@@ -58,8 +58,9 @@ get_header(); ?>
 	<div id="contact-container">	
 		<div class="row">
 			<div class="column-two-third">
-					<p class="service-contact-header">Contact</p>
-					<p class="services-contact-text"><?php the_content(); ?></p>
+					<p class="service-contact-header"><?php the_field('service-contact-header'); ?></p>
+					<p class="service-contact-text"><?php the_field('service-contact-text'); ?></p>
+					<p class="services-contact-form"><?php the_content(); ?></p>
 					</div>
 				</div>	
 			</div>	
