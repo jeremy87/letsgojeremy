@@ -48,10 +48,10 @@
 		font-size: 18px;
 		font-family: $font__main;
 		font-weight: $font__medium-weight;
+		color: $light_grey;
 
 		&:hover > a {
-			color: $green;
-			font-weight: $font__main-weight;
+			border-bottom: 2px solid $light_grey;
 		}
 	}
 	a {

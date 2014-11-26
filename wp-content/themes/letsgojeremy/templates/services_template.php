@@ -42,8 +42,8 @@ get_header(); ?>
 				</div>
 
 				<div class="column-two-third">
-					<p class="service_header_text"><?php echo the_title(); ?></p>
-					<p class="service_description"><?php the_field('service_text'); ?></p>
+					<p class="services_header_text"><?php echo the_title(); ?></p>
+					<p class="services_description"><?php the_field('service_text'); ?></p>
 				</div>
 			</div>		
 

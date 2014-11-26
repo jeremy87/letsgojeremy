@@ -48,7 +48,7 @@ p.feature-text {
 
 p.about-headline {
 	font-family: $font__written;
-	font-size: 42px;
+	font-size: 48px;
 	margin-bottom: 5px;
 }
 
@@ -92,15 +92,11 @@ a.btn:hover {
 }
 
 .service-header {
-	color: $dark_grey;
+	color: $light_grey;
 	font-family: $font__main;
 	font-weight: $font__bold-weight;
-	font-size: 32px;
+	font-size: 42px;
 	margin-bottom: 10px;
-}
-
-a.service-header {
-	text-decoration: none;
 }
 
 .frame {
@@ -111,7 +107,7 @@ a.service-header {
 }
 
 p.service_header_text {
-	color: $dark_grey;
+	color: $light_grey;
 	font-family: $font__main;
 	font-weight: $font__bold-weight;
 	font-size: 24px;
@@ -119,7 +115,7 @@ p.service_header_text {
 }
 
 p.service_description {
-	color: $dark_grey;
+	color: $light_grey;
 	font-family: $font__main;
 	font-weight: $font__medium-weight;
 	font-size: 18px;
@@ -157,6 +153,22 @@ p.secondary-hero-text {
 	padding-bottom: 20px;
 }
 
+p.services_header_text {
+	color: $dark_grey;
+	font-family: $font__main;
+	font-weight: $font__bold-weight;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+p.services_description {
+	color: $dark_grey;
+	font-family: $font__main;
+	font-weight: $font__medium-weight;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
 #contact-container {
 	background-color: $green;
 	padding-top: 50px;
@@ -164,36 +176,69 @@ p.secondary-hero-text {
 }
 
 .service-contact-header {
-	color: $dark_grey;
+	color: $light_grey;
 	font-family: $font__main;
 	font-weight: $font__bold-weight;
-	font-size: 32px;
-	margin-bottom: 10px;
+	font-size: 42px;
+	margin-bottom: 3px;
 }
 
 .service-contact-text {
-	color: $dark_grey;
+	color: $light_grey;
 	font-family: $font__main;
 	font-weight: $font__medium-weight;
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 10px;
 }
 
-/* WORK ON THE BUTTON STYLING */
-.btn-service {
- 	background-color: $dark_grey;
+input[type="text"], input[type="email"], textarea
+{
+	background-color: $light_grey;
+	border: 1px solid $dark_grey;
+	margin-top: 5px;
+}
+
+p.contact-form-text {
+	color: $light_grey;
+	font-size: 14px;
+}
+
+input[type="submit"]
+{
+	color: $dark_grey;
+    text-decoration: none;
+    background: linear-gradient($light_grey, $other_grey);
   	border-radius: 5px;
+  	border: none;
+  	text-shadow: none;
   	box-shadow: 0px 1px 3px #666666;
-  	font-family: $font__main;
-  	font-weight: $font__bold-weight;
-  	color: $dark_grey;
+  	font-family: $font__written;
+  	font-weight: $font__medium-weight;
   	font-size: 24px;
   	text-align: center;
-  	padding: 10px 5px 10px 5px;
+  	padding: 10px 30px 10px 30px;
   	text-decoration: none;
-  	max-width: 15%;
-	margin: auto;
-	margin-top: 30px;
+  	max-width: 30%;
+	margin-top: 10px;
+}
+
+input[type="submit"]:hover 
+{
+	color: $green;
+    text-decoration: none;
+    background: linear-gradient($med_grey, $dark_grey);
+  	border-radius: 5px;
+  	border: none;
+  	text-shadow: none;
+  	box-shadow: 0px 1px 3px #666666;
+  	font-family: $font__written;
+  	font-weight: $font__medium-weight;
+  	font-size: 24px;
+  	text-align: center;
+  	padding: 10px 30px 10px 30px;
+  	text-decoration: none;
+  	max-width: 30%;
+	margin-top: 10px;
 }
 
 /* PORTFOLIO PAGE */
@@ -206,7 +251,7 @@ p.secondary-hero-text {
 
 .portfolio_title_featured {
 	color: $light_grey;
-	font-size: 32px;
+	font-size: 42px;
 	font-weight: $font__bold-weight;
 	margin-bottom: 5px;
 }

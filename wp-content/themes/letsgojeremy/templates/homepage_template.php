@@ -39,7 +39,7 @@ get_header(); ?>
 			<!-- Services Area -->
 	<div id="service-container">
 		<div class="row">
-			<a.service-header="http://www.letsgojeremy.com/services"><p class="service-header">Services</p></a>
+			<p class="service-header">Services</p></a>
 		</div>	
 			<div>
 				<?php	

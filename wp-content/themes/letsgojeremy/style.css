@@ -463,10 +463,10 @@ a {
     margin-left: 20px;
     font-size: 18px;
     font-family: "Lato", sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    color: #eaeaea; }
     .main-navigation li:hover > a {
-      color: #98c539;
-      font-weight: 300; }
+      border-bottom: 2px solid #eaeaea; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -813,7 +813,7 @@ p.feature-text {
 
 p.about-headline {
   font-family: "Covered By Your Grace", cursive;
-  font-size: 42px;
+  font-size: 48px;
   margin-bottom: 5px; }
 
 p.about-text {
@@ -852,14 +852,11 @@ a.btn:hover {
   padding-bottom: 20px; }
 
 .service-header {
-  color: #3d3d3e;
+  color: #eaeaea;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 42px;
   margin-bottom: 10px; }
-
-a.service-header {
-  text-decoration: none; }
 
 .frame {
   border: 10px solid #eaeaea;
@@ -868,14 +865,14 @@ a.service-header {
   background-color: #eaeaea; }
 
 p.service_header_text {
-  color: #3d3d3e;
+  color: #eaeaea;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 5px; }
 
 p.service_description {
-  color: #3d3d3e;
+  color: #eaeaea;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -907,40 +904,83 @@ p.secondary-hero-text {
   padding-top: 50px;
   padding-bottom: 20px; }
 
+p.services_header_text {
+  color: #3d3d3e;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px; }
+
+p.services_description {
+  color: #3d3d3e;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 10px; }
+
 #contact-container {
   background-color: #98c539;
   padding-top: 50px;
   padding-bottom: 10px; }
 
 .service-contact-header {
-  color: #3d3d3e;
+  color: #eaeaea;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 32px;
-  margin-bottom: 10px; }
+  font-size: 42px;
+  margin-bottom: 3px; }
 
 .service-contact-text {
-  color: #3d3d3e;
+  color: #eaeaea;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px; }
 
-/* WORK ON THE BUTTON STYLING */
-.btn-service {
-  background-color: #3d3d3e;
-  border-radius: 5px;
-  box-shadow: 0px 1px 3px #666666;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
+input[type="text"], input[type="email"], textarea {
+  background-color: #eaeaea;
+  border: 1px solid #3d3d3e;
+  margin-top: 5px; }
+
+p.contact-form-text {
+  color: #eaeaea;
+  font-size: 14px; }
+
+input[type="submit"] {
   color: #3d3d3e;
+  text-decoration: none;
+  background: -webkit-linear-gradient(#eaeaea, #c6c5c5);
+  background: linear-gradient(#eaeaea, #c6c5c5);
+  border-radius: 5px;
+  border: none;
+  text-shadow: none;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
   font-size: 24px;
   text-align: center;
-  padding: 10px 5px 10px 5px;
+  padding: 10px 30px 10px 30px;
   text-decoration: none;
-  max-width: 15%;
-  margin: auto;
-  margin-top: 30px; }
+  max-width: 30%;
+  margin-top: 10px; }
+
+input[type="submit"]:hover {
+  color: #98c539;
+  text-decoration: none;
+  background: -webkit-linear-gradient(#575758, #3d3d3e);
+  background: linear-gradient(#575758, #3d3d3e);
+  border-radius: 5px;
+  border: none;
+  text-shadow: none;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  max-width: 30%;
+  margin-top: 10px; }
 
 /* PORTFOLIO PAGE */
 #portfolio-featured {
@@ -950,7 +990,7 @@ p.secondary-hero-text {
 
 .portfolio_title_featured {
   color: #eaeaea;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: 5px; }
 
