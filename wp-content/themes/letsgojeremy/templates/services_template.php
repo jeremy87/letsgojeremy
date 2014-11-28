@@ -61,10 +61,9 @@ get_header(); ?>
 					<p class="service-contact-header"><?php the_field('service-contact-header'); ?></p>
 					<p class="service-contact-text"><?php the_field('service-contact-text'); ?></p>
 					<p class="services-contact-form"><?php the_content(); ?></p>
-					</div>
-				</div>	
 			</div>	
 		</div>	
+	</div>	
 				
 
 		</main><!-- #main -->
