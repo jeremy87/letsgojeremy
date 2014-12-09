@@ -183,3 +183,5 @@ function query_post_type($query) {
 	return $query;
     }
 }
+
+add_filter( 'use_default_gallery_style', '__return_false' );

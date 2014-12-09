@@ -15,33 +15,28 @@ function resizeDiv() {
 
 // -- Responsive Header UNUSED -- //
 $(function(){
-  $('.site-header1').data('size','big');
+  $('#header_nav').data('size','big');
 });
 
 $(window).scroll(function(){
   if($(document).scrollTop() > 0)
 {
-    if($('.site-header1').data('size') == 'big')
+    if($('#header_nav').data('size') == 'big')
     {
-        $('.site-header1').data('size','small');
-        $('.site-header1').stop().animate({
+        $('#header_nav').data('size','small');
+        $('#header_nav').stop().animate({
             height:'40px'
         },600);
     }
 }
 else
   {
-    if($('.site-header1').data('size') == 'small')
+    if($('#header_nav').data('size') == 'small')
       {
-        $('.site-header1').data('size','big');
-        $('.site-header1').stop().animate({
-            height:'75px'
+        $('#header_nav').data('size','big');
+        $('#header_nav').stop().animate({
+            height:'100px'
         },600);
       }  
   }
 });
-
-// CALL BLOXHOVER //
-    $(document).ready(function() {
-        $('.mydiv').bloxhover({effect: 'square', duration: 400, sliceCount: 32, delay: 30, color: 'rgba(141, 198, 63, 0.7)'});
-    });

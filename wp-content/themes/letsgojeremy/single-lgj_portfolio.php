@@ -22,10 +22,8 @@ get_header(); ?>
 
 		<!-- end of our code -->
 
-
 		<!-- shows links to the next posts -->
 			<?php letsgojeremy_post_nav(); ?> 
-
 
 		<?php endwhile; // end of the loop. ?>
 

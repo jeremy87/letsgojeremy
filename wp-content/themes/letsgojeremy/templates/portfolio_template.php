@@ -26,34 +26,40 @@ get_header(); ?>
 			while ( $loop->have_posts() ) : $loop->the_post();
     		// The Content
 			?>
-<div id="portfolio-featured">
-	<div class="row">		
-		<div class="column-full">
-			<p class="portfolio_title_featured"><?php echo the_title(); ?></p>		
-					<hr />
-				<p class="portfolio_description"><?php the_field('portfolio_description'); ?></p>
-		</div>					
-			<!-- Repeater -->
-			<div class="portfolio-preview"> 
+	
+	<div id="portfolio-featured">
+		<div class="row">		
+			<div class="column-half">
+				<p class="portfolio_title_featured"><?php echo the_title(); ?></p>
+			</div>
+			<div class-"column-half">	
+				<p class="category-text-featured">Featured</p>
+			</div>
+			<div class="column-full">	
+						<hr />
+			</div>				
 
-				<?php while ( have_rows('portfolio_images') ) : the_row();?>
-					<img src="<?php the_sub_field('portfolio_images'); ?>" />
-					<p class="image-text2"><?php the_sub_field('image_name'); ?></p>
-				<?php endwhile;?>
-		 	
-		 	</div>
-			<!-- End Repeater -->
-	</div>		
-</div>
+				<div class="column-one-third">
+					<?php the_content(); ?>
+				</div>	
+
+			<div class="column-two-third">
+					<p class="portfolio_description-headline-featured"><?php the_field('portfolio_description-headline'); ?></p>	
+					<p class="portfolio_description-featured"><?php the_field('portfolio_description'); ?></p>
+			</div>	
+
+		</div>		
+	</div>
 
 
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
+	</div>		
 
 			<!-- End Featured Project -->
 
 			<!-- Portfolio Area -->
-		<div class="row">
+
 			<?php	
 			// The Arguments
 			$args = array( 
@@ -67,22 +73,31 @@ get_header(); ?>
     		// The Content
 			?>
 
-			<div class="column-one">
+	<div id="portfolio-projects">
+		<div class="row">		
+			<div class="column-half">
 				<p class="portfolio_title"><?php echo the_title(); ?></p>
-				<p class="category-text"><?php the_category(); ?></p>
-					<hr />
-				<p class="portfolio_description"><?php the_field('portfolio_description'); ?></p>
-
-				<?php while ( have_rows('portfolio_images') ) : the_row();?>
-					<img src="<?php the_sub_field('portfolio_images'); ?>" />
-					<p class="image-text2"><?php the_sub_field('image_name'); ?></p>
-				<?php endwhile;?>
-
 			</div>
+			<div class-"column-half">	
+				<p class="category-text"><?php the_category(); ?></p>
+			</div>
+			<div class="column-full">	
+					<hr class="portfolio-main" />
+			</div>			
+				<div class="column-one-third">
+					<?php the_content(); ?>
+				</div>	
+
+			<div class="column-two-third">
+					<p class="portfolio_description-headline"><?php the_field('portfolio_description-headline'); ?></p>	
+					<p class="portfolio_description"><?php the_field('portfolio_description'); ?></p>
+			</div>	
+
+		</div>
 
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
-		</div>	
+	</div>	
 
 			<?php endwhile; // end of the loop. ?>
 
