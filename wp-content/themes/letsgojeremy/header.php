@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="site-branding">
 					<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" height="37" width="267" />
+						<img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" height="30" width="216" />
 					</a>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

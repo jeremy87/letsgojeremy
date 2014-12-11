@@ -1,6 +1,6 @@
 .main-navigation {
 	float: right;
-	margin-top: 10px;
+	margin-top: 3px;
 
 	ul {
 		list-style: none;
@@ -45,13 +45,13 @@
 		float: left;
 		position: relative;
 		margin-left: 20px;
-		font-size: 18px;
+		font-size: 16px;
 		font-family: $font__main;
 		font-weight: $font__medium-weight;
 		color: $light_grey;
 
 		&:hover > a {
-			border-bottom: 2px solid $light_grey;
+			border-bottom: 1px solid $light_grey;
 		}
 	}
 	a {

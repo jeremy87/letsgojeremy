@@ -436,7 +436,7 @@ a {
 --------------------------------------------------------------*/
 .main-navigation {
   float: right;
-  margin-top: 10px; }
+  margin-top: 3px; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -461,12 +461,12 @@ a {
     float: left;
     position: relative;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: #eaeaea; }
     .main-navigation li:hover > a {
-      border-bottom: 2px solid #eaeaea; }
+      border-bottom: 1px solid #eaeaea; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -540,15 +540,15 @@ footer#colophon {
   background: url("images/greyorchid.png");
   background-repeat: repeat;
   border-bottom: 3px solid #98c539;
-  height: 75px;
+  height: 60px;
   position: fixed;
   width: 100%;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
   z-index: 999; }
 
 .site-branding {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-top: 15px;
+  margin-bottom: 12px; }
 
 /*--------------------------------------------------------------
 6.0 Accessibility
@@ -778,8 +778,8 @@ object {
   background-position: bottom center; }
 
 #gradient {
-  background: -webkit-linear-gradient(transparent, #eaeaea);
-  background: linear-gradient(transparent, #eaeaea); }
+  background: -webkit-linear-gradient(transparent 40%, #eaeaea);
+  background: linear-gradient(transparent 40%, #eaeaea); }
 
 #gradient-small {
   background: -webkit-linear-gradient(transparent, #eaeaea);
@@ -985,8 +985,8 @@ input[type="submit"]:hover {
 /* PORTFOLIO PAGE */
 #portfolio-featured {
   background-color: #98c539;
-  padding-top: 100px;
-  padding-bottom: 50px; }
+  padding-top: 80px;
+  padding-bottom: 30px; }
 
 .portfolio_title_featured {
   color: #eaeaea;
@@ -1028,7 +1028,7 @@ hr {
 #portfolio-projects {
   background-color: #eaeaea;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 30px; }
 
 .portfolio_title {
   color: #3d3d3e;
