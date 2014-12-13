@@ -11,20 +11,24 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<!-- Header Image Area -->
-		<div class="full-width secondary-hero" style="background-image: url(<?php the_field('service_image_background'); ?>);">
-			<div id="gradient-small">
-			<div class="row">
-			<p class ="secondary-hero-feature"><?php the_field('service_hero_headline'); ?></h1>
-			<p class="secondary-hero-text"><?php the_field('service_hero_text'); ?></p>
+			<!-- Intro Area -->
+	<div id="service-page">		
+		<div class="row">
+			<div class="column-two-third">
+				<img src="<?php the_field('service_image'); ?>" />
 			</div>
-			</div>
+			<div class="column-one-third">
+				<p class="service-page-header"><?php the_field('service-header'); ?></p>
+				<p class="service-page-intro"><?php the_field('service-intro'); ?></p>
+			</div>	
 		</div>
-			<!-- End Header Image Area -->
+	</div>
+			<!-- End Intro Area -->
 
 			<!-- Services Area -->
 	<div id="service-page-container">	
-		<div>
+		<div class="row">
+			
 			<?php	
 			// The Arguments
 			$args = array( 
@@ -34,18 +38,13 @@ get_header(); ?>
 			// Start Loop
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post();
-    		// The Content
-			?>	
-			<div class="row">	
+			?>
+	
 				<div class="column-third">
 					<img src="<?php the_field('services_image'); ?>" />
-				</div>
-
-				<div class="column-two-third">
 					<p class="services_header_text"><?php echo the_title(); ?></p>
 					<p class="services_description"><?php the_field('service_text'); ?></p>
-				</div>
-			</div>		
+				</div>	
 
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>

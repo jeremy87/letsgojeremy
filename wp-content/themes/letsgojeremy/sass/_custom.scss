@@ -1,46 +1,70 @@
 /* Homepage */
 
 /* Image */
-.hero-section {
+.hover-section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
 }
 
-#gradient {
-  background: linear-gradient(rgba(0,0,0,0) 40%,rgba(234,234,234,1));
-} 
-
-#gradient-small {
-  background: linear-gradient(rgba(0,0,0,0),rgba(234,234,234,1));
-  height: 300px;
-} 
-
-p.feature-headline {
-	margin-top: 500px;
-	margin-bottom: 5px;
-	font-family: $font__main;
-	font-weight: $font__bold-weight;
-	font-size: 32px;
-	color: $dark_grey;
+.view {
+	overflow: hidden;
+   	position: relative;
+   	text-align: center;
+   	box-shadow: 0px 0px 5px #aaa;
+   	cursor: default;
 }
 
-p.feature-text {
-	font-family: $font__main;
-	font-weight: $font__medium-weight;
+.view .mask, .view .content {
+   width: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.hover-effect .mask {
+   opacity: 0;
+   overflow:visible;
+   border: 500px solid rgba(0,0,0,0.5);
+   box-sizing:  border-box;
+   transition: all 0.4s ease-in-out;
+   margin: 0;
+}
+
+.hover-effect:hover .mask {
+   opacity: 1;
+   border:100% solid rgba(0,0,0,0.5);
+   margin: 0;
+}
+
+p.hover-text-heading {
+	font-size: 24px;
+	color: $light_grey;
+	padding-bottom: 5px;
+	margin: 0;
+}
+
+p.hover-text {
 	font-size: 18px;
-	color: $dark_grey;
+	color: $light_grey;
+	margin: 0;
 }
 
 /* About */
 
-#light_grey {
+#about-container {
 	background-color: $light_grey;
-	padding-top: 75px;
-	padding-bottom: 75px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
-#about-container {
+#about-text-container {
 	text-align: center;
 	max-width: 65%;
 	margin: auto;
@@ -129,22 +153,6 @@ p.service_description {
 	background-size: cover;
 	background-position: bottom center;
 	height: 300px
-}
-
-p.secondary-hero-feature { 
-	color: $light_grey;
-	font-family: $font__main;
-	font-weight: $font__bold-weight;
-	font-size: 32px;
-	margin-bottom: 5px;
-	padding-top: 100px;
-}
-
-p.secondary-hero-text {
-	color: $light_grey;
-	font-family: $font__main;
-	font-weight: $font__medium-weight;
-	font-size: 18px;	
 }
 
 #service-page-container {
