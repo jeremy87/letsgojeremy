@@ -15,8 +15,8 @@ get_header(); ?>
 		<div class="view hover-effect">
 			<div class="full-width hover-section" style="background-image: url(<?php the_field('featured_image_background'); ?>);">
 				<div class="mask">
-					<p class="hover-text-heading">Welcome</p>
-					<p class="hover-text">Scroll for more</p>
+					<p class="hover-text-heading">welcome.</p>
+					<p class="hover-text">[italy]</p>
 				</div>
 			</div>
 		</div>						
@@ -29,7 +29,7 @@ get_header(); ?>
 					<div class="column-one">
 							<p class="about-headline"><?php the_field('about_headline'); ?></p>
 							<p class="about-text"><?php the_field('about_text'); ?></p>
-							<a class="btn" href="http://www.letsgojeremy.com/services">Let's Go!</a>
+							<a class="btn" href="index.php?page_id=2">let's go</a>
 					</div>
 				</div>	
 			</div>
