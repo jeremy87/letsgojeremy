@@ -15,8 +15,7 @@ get_header(); ?>
 		<div class="view hover-effect">
 			<div class="full-width hover-section" style="background-image: url(<?php the_field('featured_image_background'); ?>);">
 				<div class="mask">
-					<p class="hover-text-heading">welcome.</p>
-					<p class="hover-text">[italy]</p>
+					<p class="hover-text-heading">san fabiano calcinaia</p>
 				</div>
 			</div>
 		</div>						

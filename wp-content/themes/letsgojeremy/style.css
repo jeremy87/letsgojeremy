@@ -460,7 +460,7 @@ a {
   .main-navigation li {
     float: left;
     position: relative;
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -811,14 +811,14 @@ object {
   margin: 0; }
 
 p.hover-text-heading {
-  font-size: 32px;
+  font-size: 22px;
   color: #f7f7f7;
   text-shadow: 2px 2px #3d3d3e;
   padding-bottom: 5px;
   margin: 0; }
 
 p.hover-text {
-  font-size: 18px;
+  font-size: 16px;
   color: #f7f7f7;
   text-shadow: 2px 2px #3d3d3e;
   margin: 0; }
