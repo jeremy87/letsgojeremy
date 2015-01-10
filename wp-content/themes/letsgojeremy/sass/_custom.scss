@@ -83,6 +83,31 @@ p.about-text {
 	font-size: 24px;
 }
 
+.btn-main {
+	margin: auto;
+}
+
+a.btn-main {
+	color: $dark_grey;
+    text-decoration: none;
+    background: linear-gradient($green, $dark_green);
+  	border-radius: 5px;
+  	box-shadow: 0px 1px 3px #666666;
+  	font-family: $font__written;
+  	font-size: 22px;
+  	text-align: center;
+  	padding: 7px 30px 7px 30px;
+  	text-decoration: none;
+  	max-width: 15%;
+	margin-top: 30px;
+}
+
+a.btn-main:hover {
+	color: $green;
+    text-decoration: none;
+    background: linear-gradient($med_grey, $dark_grey);
+}
+
 .btn {
 	margin: auto;
 }
@@ -145,7 +170,7 @@ a.btn:hover {
 	color: $light_grey;
 	font-family: $font__main;
 	font-weight: $font__medium-weight;
-	font-size: 24px;
+	font-size: 28px;
 	margin-bottom: 5px;
 }
 

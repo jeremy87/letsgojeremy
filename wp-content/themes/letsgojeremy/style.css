@@ -843,6 +843,30 @@ p.about-text {
   font-family: "Covered By Your Grace", cursive;
   font-size: 24px; }
 
+.btn-main {
+  margin: auto; }
+
+a.btn-main {
+  color: #3d3d3e;
+  text-decoration: none;
+  background: -webkit-linear-gradient(#98c539, #81b01f);
+  background: linear-gradient(#98c539, #81b01f);
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 22px;
+  text-align: center;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  max-width: 15%;
+  margin-top: 30px; }
+
+a.btn-main:hover {
+  color: #98c539;
+  text-decoration: none;
+  background: -webkit-linear-gradient(#575758, #3d3d3e);
+  background: linear-gradient(#575758, #3d3d3e); }
+
 .btn {
   margin: auto; }
 
@@ -898,7 +922,7 @@ a.btn:hover {
   color: #f7f7f7;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 5px; }
 
 .service-page-intro {

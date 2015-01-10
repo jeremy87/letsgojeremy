@@ -28,7 +28,7 @@ get_header(); ?>
 					<div class="column-one">
 							<p class="about-headline"><?php the_field('about_headline'); ?></p>
 							<p class="about-text"><?php the_field('about_text'); ?></p>
-							<a class="btn" href="index.php?page_id=2">let's go</a>
+							<a class="btn-main" href="index.php?page_id=2">let's go</a>
 					</div>
 				</div>	
 			</div>

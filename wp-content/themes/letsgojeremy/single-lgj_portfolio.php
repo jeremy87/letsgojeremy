@@ -14,11 +14,28 @@ get_header(); ?>
 
 		<!-- our code -->
 
-		<h2><?php the_title(); ?></h2>
-		<?php echo get_the_category_list( '. '); ?>
+	<div id="portfolio-projects">
+		<div class="row">		
+			<div class="column-half">
+				<p class="portfolio_title"><?php echo the_title(); ?></p>
+			</div>
+			<div class-"column-half">	
+				<p class="category-text"><?php the_category(); ?></p>
+			</div>
+			<div class="column-full">	
+					<hr class="portfolio-main" />
+			</div>			
+				<div class="column-one-third">
+					<?php the_content(); ?>
+				</div>	
 
-		<p><?php the_field('feature_description'); ?></p>
-		<?php the_content(); ?>
+			<div class="column-two-third">
+					<p class="portfolio_description-headline"><?php the_field('portfolio_description-headline'); ?></p>	
+					<p class="portfolio_description"><?php the_field('portfolio_description'); ?></p>
+			</div>	
+
+		</div>
+	</div>	
 
 		<!-- end of our code -->
 
