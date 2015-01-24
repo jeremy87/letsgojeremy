@@ -169,6 +169,18 @@ function create_post_type() {
             'rewrite' => array('slug'=>'portfolio')
         )
     );
+    register_post_type( 'lgj_jobs',
+        array(
+            'labels' => array(
+                'name' => __( 'Jobs' ),
+                'singular_name' => __( 'Job' )
+            ),
+            'taxonomies' => array('category'),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug'=>'resume')
+        )
+    );
 }
 
 add_filter('pre_get_posts', 'query_post_type');
