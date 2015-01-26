@@ -462,9 +462,15 @@ hr.portfolio-main {
 
 /* CONTACT PAGE */
 
+#resume-area {
+	background-color: $green;
+	padding-top: 100px;
+	padding-bottom: 10px;
+}
+
 #contact-page-container {
 	background-color: $light_grey;
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 10px;
 }
 

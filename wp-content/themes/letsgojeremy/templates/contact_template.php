@@ -12,6 +12,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<!-- Featured Project -->
+	<div id="resume-area">
 
 		<?php	
 			// The Arguments
@@ -25,27 +26,21 @@ get_header(); ?>
 			while ( $loop->have_posts() ) : $loop->the_post();
     		// The Content
 			?>
-	
-	<div id="resume-area">
-		<div class="row">		
-			
+				
+		<div class="row">
 			<div class="column-one-third frame">
 				<img src="<?php the_field('company_logo'); ?>" />
 			</div>
-			<div class-"column-two-third">	
-				<p><?php the_field('company_name'); ?></p>
-				<p><?php the_field('job_title'); ?></p>
+			<div class="column-two-third">	
+				<p><strong><?php the_field('company_name'); ?></strong> | <i><?php the_field('job_title'); ?></i></p>
 				<p><?php the_field('dates_employeed'); ?></p>
 				<p><?php the_field('job_description'); ?></p>
 			</div>				
-
 		</div>		
-	</div>
-
 
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
-	</div>
+	</div>		
 
 	<div id="contact-page-container">	
 		<div class="row">
