@@ -464,13 +464,13 @@ a {
     font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    color: #f7f7f7; }
+    color: #eff9f4; }
     .main-navigation li:hover > a {
-      border-bottom: 1px solid #f7f7f7; }
+      border-bottom: 1px solid #eff9f4; }
   .main-navigation a {
     display: block;
     text-decoration: none;
-    color: #f7f7f7; }
+    color: #eff9f4; }
 
 /* Small menu */
 .menu-toggle {
@@ -512,7 +512,7 @@ footer#colophon {
 .copyright {
   text-align: left;
   font-size: 12px;
-  color: #f7f7f7;
+  color: #eff9f4;
   font-family: "Lato", sans-serif;
   font-weight: 100; }
 
@@ -526,10 +526,10 @@ footer#colophon {
     text-align: right;
     margin-left: 5px; }
     .menu-footer-navigation-container li a {
-      color: #f7f7f7;
+      color: #eff9f4;
       text-decoration: none; }
       .menu-footer-navigation-container li a:hover {
-        color: #98c539; }
+        color: #2e8c5a; }
 
 .menu-footer-navigation-container {
   margin-bottom: 5px; }
@@ -539,7 +539,7 @@ footer#colophon {
 .site-header {
   background: url("images/greyorchid.png");
   background-repeat: repeat;
-  border-bottom: 3px solid #98c539;
+  border-bottom: 3px solid #2e8c5a;
   height: 60px;
   position: fixed;
   width: 100%;
@@ -812,20 +812,20 @@ object {
 
 p.hover-text-heading {
   font-size: 22px;
-  color: #f7f7f7;
+  color: #eff9f4;
   text-shadow: 2px 2px #3d3d3e;
   padding-bottom: 5px;
   margin: 0; }
 
 p.hover-text {
   font-size: 16px;
-  color: #f7f7f7;
+  color: #eff9f4;
   text-shadow: 2px 2px #3d3d3e;
   margin: 0; }
 
 /* About */
 #about-container {
-  background-color: #f7f7f7;
+  background-color: #eff9f4;
   padding-top: 50px;
   padding-bottom: 50px; }
 
@@ -837,35 +837,39 @@ p.hover-text {
 p.about-headline {
   font-family: "Covered By Your Grace", cursive;
   font-size: 48px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 p.about-text {
   font-family: "Covered By Your Grace", cursive;
-  font-size: 24px; }
+  font-size: 24px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .btn-main {
   margin: auto; }
 
 a.btn-main {
-  color: #3d3d3e;
+  color: #eff9f4;
   text-decoration: none;
-  background: -webkit-linear-gradient(#98c539, #81b01f);
-  background: linear-gradient(#98c539, #81b01f);
-  border-radius: 5px;
-  box-shadow: 0px 1px 3px #666666;
+  background: -webkit-linear-gradient(#2e8c5a, #236b45);
+  background: linear-gradient(#2e8c5a, #236b45);
+  border: 1px solid #2e8c5a;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
   font-family: "Covered By Your Grace", cursive;
   font-size: 22px;
   text-align: center;
   padding: 7px 30px 7px 30px;
   text-decoration: none;
   max-width: 15%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  border: 2px solid #2e8c5a; }
 
 a.btn-main:hover {
-  color: #98c539;
+  color: #eff9f4;
   text-decoration: none;
-  background: -webkit-linear-gradient(#575758, #3d3d3e);
-  background: linear-gradient(#575758, #3d3d3e); }
+  border: 2px solid #2e8c5a;
+  background: -webkit-linear-gradient(#236b45, #2e8c5a);
+  background: linear-gradient(#236b45, #2e8c5a); }
 
 .btn {
   margin: auto; }
@@ -873,8 +877,9 @@ a.btn-main:hover {
 a.btn {
   color: #3d3d3e;
   text-decoration: none;
-  background: -webkit-linear-gradient(#98c539, #81b01f);
-  background: linear-gradient(#98c539, #81b01f);
+  background: -webkit-linear-gradient(#2e8c5a, #236b45);
+  background: linear-gradient(#2e8c5a, #236b45);
+  border: 1px solid #2e8c5a;
   border-radius: 5px;
   box-shadow: 0px 1px 3px #666666;
   font-family: "Lato", sans-serif;
@@ -887,19 +892,20 @@ a.btn {
   margin-top: 30px; }
 
 a.btn:hover {
-  color: #98c539;
+  color: #3d3d3e;
+  border: 1px solid #2e8c5a;
   text-decoration: none;
-  background: -webkit-linear-gradient(#575758, #3d3d3e);
-  background: linear-gradient(#575758, #3d3d3e); }
+  background: -webkit-linear-gradient(#236b45, #2e8c5a);
+  background: linear-gradient(#236b45, #2e8c5a); }
 
 /* Service Area */
 #service-container {
-  background-color: #98c539;
+  background-color: #2e8c5a;
   padding-top: 50px;
   padding-bottom: 20px; }
 
 .service-header {
-  color: #f7f7f7;
+  color: #eff9f4;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -907,39 +913,42 @@ a.btn:hover {
 
 /* SERVICE PAGE */
 #service-page {
-  background-color: #98c539;
+  background-color: #2e8c5a;
   padding-top: 80px;
   padding-bottom: 40px; }
 
 .service-title {
-  color: #f7f7f7;
+  color: #eff9f4;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 42px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .service-page-header {
-  color: #f7f7f7;
+  color: #eff9f4;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 28px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .service-page-intro {
-  color: #f7f7f7;
+  color: #eff9f4;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .frame {
-  border: 7px solid #f7f7f7;
-  border-bottom: 2px solid #f7f7f7;
+  border: 7px solid #eff9f4;
+  border-bottom: 2px solid #eff9f4;
   box-shadow: 0 8px 6px -6px black;
-  background-color: #f7f7f7; }
+  background-color: #eff9f4; }
 
 #services-section {
-  background: #f7f7f7;
+  background: #eff9f4;
   padding-top: 50px;
   padding-bottom: 20px; }
 
@@ -960,11 +969,11 @@ p.services_description {
 
 .frame2 {
   box-shadow: 0px 0px 4px #999;
-  border: 5px solid #f7f7f7;
-  border-bottom: 1px solid #f7f7f7; }
+  border: 5px solid #eff9f4;
+  border-bottom: 1px solid #eff9f4; }
 
 #contact-container {
-  background-color: #f7f7f7;
+  background-color: #eff9f4;
   padding-top: 50px;
   padding-bottom: 10px; }
 
@@ -993,12 +1002,12 @@ p.contact-form-text {
   font-size: 14px; }
 
 input[type="submit"] {
-  color: #3d3d3e;
+  color: #eff9f4;
   text-decoration: none;
-  background: -webkit-linear-gradient(#98c539, #81b01f);
-  background: linear-gradient(#98c539, #81b01f);
+  background: -webkit-linear-gradient(#2e8c5a, #236b45);
+  background: linear-gradient(#2e8c5a, #236b45);
   border-radius: 5px;
-  border: none;
+  border: 1px solid #2e8c5a;
   text-shadow: none;
   box-shadow: 0px 1px 3px #666666;
   font-family: "Lato", sans-serif;
@@ -1011,12 +1020,12 @@ input[type="submit"] {
   margin-top: 10px; }
 
 input[type="submit"]:hover {
-  color: #98c539;
+  color: #eff9f4;
   text-decoration: none;
-  background: -webkit-linear-gradient(#575758, #3d3d3e);
-  background: linear-gradient(#575758, #3d3d3e);
+  background: -webkit-linear-gradient(#236b45, #2e8c5a);
+  background: linear-gradient(#236b45, #2e8c5a);
   border-radius: 5px;
-  border: none;
+  border: 1px solid #2e8c5a;
   text-shadow: none;
   box-shadow: 0px 1px 3px #666666;
   font-family: "Lato", sans-serif;
@@ -1030,15 +1039,16 @@ input[type="submit"]:hover {
 
 /* PORTFOLIO PAGE */
 #portfolio-featured {
-  background-color: #98c539;
+  background-color: #2e8c5a;
   padding-top: 80px;
   padding-bottom: 30px; }
 
 .portfolio_title_featured {
-  color: #f7f7f7;
+  color: #eff9f4;
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 1px; }
+  margin-bottom: 1px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .category-text-featured {
   float: right;
@@ -1053,26 +1063,30 @@ input[type="submit"]:hover {
   font-weight: 400;
   list-style: none;
   text-align: center;
-  background-color: #f7f7f7;
-  color: #3d3d3e; }
+  background-color: #eff9f4;
+  color: #3d3d3e;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 hr {
   height: 2px;
-  background-color: #f7f7f7; }
+  background-color: #eff9f4;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .portfolio_description-headline-featured {
-  color: #f7f7f7;
+  color: #eff9f4;
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .portfolio_description-featured {
-  color: #f7f7f7;
+  color: #eff9f4;
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 #portfolio-projects {
-  background-color: #f7f7f7;
+  background-color: #eff9f4;
   padding-top: 50px;
   padding-bottom: 30px; }
 
@@ -1106,13 +1120,13 @@ hr.portfolio-main {
   padding-right: 20px; }
 
 .gallery img {
-  box-shadow: 0px 0px 4px #999;
-  border: 1px solid #c6c5c5;
-  padding: 5px;
-  background: #f7f7f7; }
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid #c6c5c5;
+  padding: 3px;
+  background: #eff9f4; }
 
 .gallery .gallery-caption {
-  color: #f7f7f7;
+  color: #eff9f4;
   font-size: 14px;
   margin: 0 0 12px; }
 
@@ -1127,6 +1141,12 @@ hr.portfolio-main {
 
 .gallery-columns-4 .gallery-item {
   width: 25%; }
+
+.gallery-text {
+  color: #3d3d3e;
+  font-size: 14px;
+  margin: 0 0 12px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 /* END Gallery Images*/
 .image123 {
@@ -1170,19 +1190,54 @@ hr.portfolio-main {
     list-style: none;
     text-align: center;
     display: inline-block;
-    background-color: #98c539; }
+    background-color: #2e8c5a; }
   .post-categories a {
     text-decoration: none;
-    color: #f7f7f7; }
+    color: #eff9f4; }
 
 /* CONTACT PAGE */
 #resume-area {
-  background-color: #98c539;
-  padding-top: 100px;
-  padding-bottom: 10px; }
+  background-color: #2e8c5a;
+  padding-top: 70px;
+  padding-bottom: 20px; }
+
+.border {
+  border: 3px solid #eff9f4;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.padding-right {
+  padding-right: 20%; }
+
+.company {
+  color: #3d3d3e;
+  font-size: 24px;
+  margin-bottom: 7px; }
+
+.dates-employed {
+  color: #eff9f4;
+  font-size: 16px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  font-family: "Lato", sans-serif; }
+
+.job-description {
+  color: #eff9f4;
+  font-size: 16px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  font-family: "Lato", sans-serif; }
+
+hr.resume {
+  height: 1.5px;
+  background-color: #eff9f4;
+  margin-bottom: 5px; }
 
 #contact-page-container {
-  background-color: #f7f7f7;
+  background-color: #eff9f4;
   padding-top: 40px;
   padding-bottom: 10px; }
 

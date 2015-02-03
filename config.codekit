@@ -10452,6 +10452,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI-150x150.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12978,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI-150x150.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI-300x142.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19740,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI-300x142.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI-300x142.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 336656,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/09\/BLabs-Flyer-LI.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2014\/09\/P1010919-1024x768.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

@@ -85,7 +85,7 @@ get_header(); ?>
 					<hr class="portfolio-main" />
 			</div>			
 				<div class="column-one-third">
-					<?php the_content(); ?>
+					<p class="gallery-text"><?php the_content(); ?></p>
 				</div>	
 
 			<div class="column-two-third">
