@@ -30,7 +30,8 @@ get_header(); ?>
 		<div class="row">
 			<hr class="resume" />
 				<div class="coulmn-full padding-right">	
-					<p class="company"><strong><?php the_field('company_name'); ?></strong> | <i><span style="font-size:18px; padding-top:7px"><?php the_field('job_title'); ?></span></i> <i><span style="float:right; color:#f7f7f7; font-size:16px; padding-top:9px"><?php the_field('dates_employeed'); ?></span></i></p>
+					<p class="company"><?php the_field('company_name'); ?>
+					<p class="title-dates"><?php the_field('job_title'); ?> // <?php the_field('dates_employeed'); ?></p>
 					<p class="job-description"><?php the_field('job_description'); ?></p>
 				</div>			
 		</div>		
