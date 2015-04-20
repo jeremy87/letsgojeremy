@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<!-- our code -->
 
-	<div id="portfolio-projects">
+	<div id="single-portfolio">
 		<div class="row">		
 			<div class="column-half">
 				<p class="portfolio_title"><?php echo the_title(); ?></p>
@@ -40,7 +40,14 @@ get_header(); ?>
 		<!-- end of our code -->
 
 		<!-- shows links to the next posts -->
-			<?php letsgojeremy_post_nav(); ?> 
+
+	<div id="nav-links">
+		<div class="row">
+
+				<?php letsgojeremy_post_nav(); ?>
+
+		</div>
+	</div>		
 
 		<?php endwhile; // end of the loop. ?>
 

@@ -170,7 +170,7 @@ a.btn:hover {
 	font-weight: $font__bold-weight;
 	font-size: 42px;
 	margin-bottom: 10px;
-	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .service-page-header {
@@ -179,7 +179,7 @@ a.btn:hover {
 	font-weight: $font__medium-weight;
 	font-size: 28px;
 	margin-bottom: 5px;
-	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .service-page-intro {
@@ -188,7 +188,7 @@ a.btn:hover {
 	font-weight: $font__main-weight;
 	font-size: 18px;
 	margin-bottom: 0px;
-	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .frame {
@@ -255,13 +255,11 @@ input[type="text"], input[type="email"], textarea
 	background-color: #fff;
 	border: 1px solid $dark_grey;
 	margin-top: 5px;
-	box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 p.contact-form-text {
 	color: $dark_grey;
 	font-size: 14px;
-	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 input[type="submit"]
@@ -270,8 +268,8 @@ input[type="submit"]
     text-decoration: none;
     background: linear-gradient($green, $dark_green);
   	border: 1px solid $green;
-  	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
-  	box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  	box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
   	font-family: $font__main;
   	font-weight: $font__medium-weight;
   	font-size: 18px;
@@ -287,8 +285,8 @@ input[type="submit"]:hover
     text-decoration: none;
     background: linear-gradient($dark_green, $green);
   	border: 1px solid $green;
-  	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
-  	box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  	box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
   	font-family: $font__main;
   	font-weight: $font__medium-weight;
   	font-size: 18px;
@@ -540,3 +538,15 @@ hr.resume {
 }
 
 /* SINGLE PORTFOLIO PAGE */
+
+#single-portfolio {
+	background-color: $light_grey;
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
+#nav-links {
+	background-color: $light_grey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

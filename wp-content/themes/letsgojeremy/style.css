@@ -923,7 +923,7 @@ a.btn:hover {
   font-weight: 700;
   font-size: 42px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
 
 .service-page-header {
   color: #eff9f4;
@@ -931,7 +931,7 @@ a.btn:hover {
   font-weight: 400;
   font-size: 28px;
   margin-bottom: 5px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
 
 .service-page-intro {
   color: #eff9f4;
@@ -939,7 +939,7 @@ a.btn:hover {
   font-weight: 300;
   font-size: 18px;
   margin-bottom: 0px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
 
 .frame {
   border: 7px solid #eff9f4;
@@ -994,13 +994,11 @@ p.services_description {
 input[type="text"], input[type="email"], textarea {
   background-color: #fff;
   border: 1px solid #3d3d3e;
-  margin-top: 5px;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  margin-top: 5px; }
 
 p.contact-form-text {
   color: #3d3d3e;
-  font-size: 14px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  font-size: 14px; }
 
 input[type="submit"] {
   color: #eff9f4;
@@ -1008,8 +1006,8 @@ input[type="submit"] {
   background: -webkit-linear-gradient(#2e8c5a, #236b45);
   background: linear-gradient(#2e8c5a, #236b45);
   border: 1px solid #2e8c5a;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1024,8 +1022,8 @@ input[type="submit"]:hover {
   background: -webkit-linear-gradient(#236b45, #2e8c5a);
   background: linear-gradient(#236b45, #2e8c5a);
   border: 1px solid #2e8c5a;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1245,3 +1243,12 @@ hr.resume {
   padding-bottom: 10px; }
 
 /* SINGLE PORTFOLIO PAGE */
+#single-portfolio {
+  background-color: #eff9f4;
+  padding-top: 100px;
+  padding-bottom: 30px; }
+
+#nav-links {
+  background-color: #eff9f4;
+  padding-top: 10px;
+  padding-bottom: 10px; }
